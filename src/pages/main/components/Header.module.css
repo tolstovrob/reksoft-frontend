@@ -1,0 +1,119 @@
+.header {
+  position: relative;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: 240px 1fr auto;
+  align-items: center;
+  height: 64px;
+  background: transparent;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 187.2px;
+  right: 0;
+  bottom: 0;
+  background: #4b1097;
+  clip-path: polygon(52.8px 0, 100% 0, 100% 100%, 0 100%);
+  z-index: -1;
+}
+
+.logoBlock {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+  padding: 0 40px 0 24px;
+  background: transparent;
+  clip-path: polygon(0 0, 100% 0, 78% 100%, 0 100%);
+  pointer-events: none;
+}
+
+.logoBlock > * {
+  pointer-events: auto;
+}
+
+.logoIcon {
+  width: 34px;
+  height: 34px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  padding: 6px;
+  flex-shrink: 0;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+}
+
+.navLink {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.navLink:hover {
+  color: #f0abfc;
+}
+
+.loginBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 20px;
+  margin-right: 24px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    inset 0 0 12px rgba(255, 255, 255, 0.05);
+  transition:
+    background 0.2s,
+    box-shadow 0.2s;
+}
+
+.loginBtn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    inset 0 0 16px rgba(255, 255, 255, 0.08);
+}
+
+.avatar {
+  height: 1.25em;
+}
+
+@media (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+}

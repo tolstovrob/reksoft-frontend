@@ -19,22 +19,12 @@
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": [
-      "./tsconfig.json"
-    ]
+    "project": ["./tsconfig.json"]
   },
-  "plugins": [
-    "@typescript-eslint",
-    "simple-import-sort",
-    "react",
-    "react-hooks"
-  ],
+  "plugins": ["@typescript-eslint", "simple-import-sort", "react", "react-hooks"],
   "rules": {
     "linebreak-style": 0,
-    "arrow-body-style": [
-      0,
-      "always"
-    ],
+    "arrow-body-style": [0, "always"],
     "import/no-default-export": 0,
     "import/prefer-default-export": 0,
     "import/no-cycle": 0,
@@ -55,9 +45,7 @@
     "@typescript-eslint/unbound-method": 0,
     "react/static-property-placement": 0,
     "react/sort-comp": 0,
-    "simple-import-sort/imports": [
-      "error"
-    ],
+    "simple-import-sort/imports": ["error"],
     "@typescript-eslint/no-use-before-define": [
       "warn",
       {
@@ -70,36 +58,19 @@
     "@typescript-eslint/naming-convention": [
       "error",
       {
-        "selector": [
-          "variable",
-          "function"
-        ],
-        "format": [
-          "PascalCase",
-          "camelCase"
-        ],
+        "selector": ["variable", "function"],
+        "format": ["PascalCase", "camelCase"],
         "leadingUnderscore": "allow"
       },
       {
-        "selector": [
-          "parameter"
-        ],
-        "format": [
-          "camelCase",
-          "PascalCase"
-        ],
+        "selector": ["parameter"],
+        "format": ["camelCase", "PascalCase"],
         "leadingUnderscore": "allowSingleOrDouble"
       },
       {
         "selector": "variable",
-        "modifiers": [
-          "const"
-        ],
-        "format": [
-          "UPPER_CASE",
-          "PascalCase",
-          "camelCase"
-        ],
+        "modifiers": ["const"],
+        "format": ["UPPER_CASE", "PascalCase", "camelCase"],
         "leadingUnderscore": "allow"
       }
     ],

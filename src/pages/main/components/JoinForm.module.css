@@ -1,0 +1,116 @@
+.section {
+  position: relative;
+  padding: 100px 0 60px;
+  text-align: center;
+}
+
+.title {
+  font-size: 32px;
+  color: #fff;
+  margin: 0 0 14px;
+  font-weight: 700;
+}
+
+.brand {
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+
+.subtitle {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  margin: 0 0 40px;
+  line-height: 1.6;
+}
+
+.form {
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 28px;
+  border-radius: 14px;
+  background: rgba(30, 15, 60, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field span {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 12px;
+}
+
+.field input {
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: rgba(20, 10, 45, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.field input::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.field input:focus {
+  border-color: rgba(217, 70, 239, 0.6);
+}
+
+.submit {
+  margin-top: 8px;
+  padding: 13px;
+  border: 0;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #a855f7, #ec4899);
+  color: #fff;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px -8px rgba(236, 72, 153, 0.5);
+  transition: transform 0.2s;
+}
+
+.submit:hover {
+  transform: translateY(-2px);
+}
+
+.trophy {
+  position: absolute;
+  left: -30px;
+  bottom: -20px;
+  width: 180px;
+  filter: drop-shadow(0 20px 40px rgba(217, 70, 239, 0.5));
+  pointer-events: none;
+  z-index: 1;
+}
+
+.dpad {
+  position: absolute;
+  right: -40px;
+  top: -60px;
+  width: 220px;
+  transform: rotate(15deg);
+  filter: drop-shadow(0 20px 40px rgba(120, 50, 200, 0.5));
+  pointer-events: none;
+  z-index: 1;
+}
+
+@media (max-width: 800px) {
+  .trophy,
+  .dpad {
+    display: none;
+  }
+}
