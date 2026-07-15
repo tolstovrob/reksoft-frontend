@@ -46,8 +46,8 @@
 
 .icon {
   color: #d946ef;
+  transform-origin: center;
   font-size: 22px;
-  font-weight: 300;
   transition: transform 0.25s;
 }
 
