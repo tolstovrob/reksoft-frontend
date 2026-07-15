@@ -1,3 +1,4 @@
+import logo from '../assets/logo.svg';
 import styles from './Footer.module.css';
 
 export function Footer() {
@@ -12,9 +13,7 @@ export function Footer() {
       <div className={styles.row}>
         <div className={styles.logoBlock}>
           <div className={styles.logoIcon}>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M3 20h18l-2-9-4 3-3-8-3 8-4-3-2 9z" />
-            </svg>
+            <img src={logo} alt="logo" width="24" height="24" />
           </div>
           <div className={styles.logoText}>
             <span>NEXUS</span>

@@ -1,3 +1,4 @@
+import logo from '../assets/logo.svg';
 import profileIcon from '../assets/profile.svg';
 import styles from './Header.module.css';
 
@@ -6,17 +7,15 @@ const NAV = ['Игроки', 'Команды', 'Турниры', 'Игры', 'Н
 export function Header() {
   return (
     <header className={styles.header}>
-      <div className={styles.logoBlock}>
+      <a href="#" className={styles.logoBlock}>
         <div className={styles.logoIcon}>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <path d="M3 20h18l-2-9-4 3-3-8-3 8-4-3-2 9z" />
-          </svg>
+          <img src={logo} alt="logo" width="24" height="24" />
         </div>
         <div className={styles.logoText}>
           <span>NEXUS</span>
           <span>ARENA</span>
         </div>
-      </div>
+      </a>
       <nav className={styles.nav}>
         {NAV.map((item) => (
           <a key={item} href="#" className={styles.navLink}>

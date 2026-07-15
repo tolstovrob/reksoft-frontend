@@ -25,7 +25,7 @@
   z-index: 2;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   height: 100%;
   padding: 0 40px 0 24px;
   background: transparent;
@@ -35,17 +35,13 @@
 
 .logoBlock > * {
   pointer-events: auto;
+  display: flex;
+  align-items: center;
 }
 
 .logoIcon {
-  width: 34px;
-  height: 34px;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 8px;
-  display: grid;
-  place-items: center;
-  padding: 6px;
+  width: 1em;
+  height: 1em;
   flex-shrink: 0;
 }
 
