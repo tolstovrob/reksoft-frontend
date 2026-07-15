@@ -19,7 +19,7 @@ const ITEMS = [
     q: 'Как стать партнёром портала?',
     a: 'Напишите нам через форму обратной связи с описанием предложения — команда партнёрств свяжется с вами.',
   },
-];
+] as const;
 
 export function Faq() {
   const [open, setOpen] = useState<number | null>(0);
