@@ -34,7 +34,7 @@ export function Footer() {
           <a href="#">О нас</a>
         </nav>
       </div>
-      <p className={styles.copy}>© {currentYear} NEXUS ARENA. Все права защищены.</p>
+      <p className={styles.copy}>&copy; {currentYear} NEXUS ARENA. Все права защищены.</p>
     </footer>
   );
 }
