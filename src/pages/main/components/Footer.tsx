@@ -1,6 +1,9 @@
 import styles from './Footer.module.css';
 
 export function Footer() {
+  const currentYear = new Date().getFullYear();
+  // NOTE(tolstovrob): использовать под это стейт абсурдно. Здесь за глаза хватит и обычной константы
+
   return (
     <footer className={styles.footer}>
       <p className={styles.tagline}>
@@ -24,7 +27,7 @@ export function Footer() {
           <a href="#">О нас</a>
         </nav>
       </div>
-      <p className={styles.copy}>© 2026 NEXUS ARENA. Все права защищены.</p>
+      <p className={styles.copy}>© {currentYear} NEXUS ARENA. Все права защищены.</p>
     </footer>
   );
 }
